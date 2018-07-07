@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "910673032316",
+    "firebase_url": "https://keralakada-bot.firebaseio.com",
+    "project_id": "keralakada-bot",
+    "storage_bucket": "keralakada-bot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910673032316:android:329103232c8a74c0",
+        "android_client_info": {
+          "package_name": "com.press4news"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910673032316-pqka4isbdul10bcpn3dbish1cfhoviko.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJtsi7FgXiEWzP9MXE-jHic3hV9RD-xck"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.press4news">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application
+      android:name="com.press4news.MainApplication"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:allowBackup="false"
+      
+      android:theme="@style/AppTheme">
+      <activity
+        android:name="com.press4news.MainActivity"
+        android:label="@string/app_name"
+        android:configChanges="keyboard|keyboardHidden|screenSize"
+         android:launchMode="singleTop"
+         android:screenOrientation="portrait" 
+         
+        android:windowSoftInputMode="adjustResize">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity>
+      <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+
+      <service android:name="io.invertase.firebase.messaging.RNFirebaseMessagingService">
+    <intent-filter>
+      <action android:name="com.google.firebase.MESSAGING_EVENT" />
+    </intent-filter>
+  </service>
+  <service android:name="io.invertase.firebase.messaging.RNFirebaseInstanceIdService">
+
+    <intent-filter>
+      <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+    </intent-filter>
+  </service>
+ 
+
+  <!-- <meta-data
+    android:name="com.google.firebase.messaging.default_notification_icon"
+    android:resource="@drawable/ic_launcher" /> -->
+  <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+       notification message. See README(https://goo.gl/6BKBk7) for more. -->
+  <!-- <meta-data
+    android:name="com.google.firebase.messaging.default_notification_color"
+    android:resource="@color/colorAccent" /> -->
+    </application>
+
+</manifest>
